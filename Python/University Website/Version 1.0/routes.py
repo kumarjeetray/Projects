@@ -101,3 +101,5 @@ def route(app, db):
         logout_user()
         flash("You have been logged out!", category='info')
         return redirect(url_for("home_page"))
+
+    

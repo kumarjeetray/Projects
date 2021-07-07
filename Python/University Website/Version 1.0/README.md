@@ -51,6 +51,7 @@
 <hr>
 
 <h2>Input</h2>
+
 ![Image](Images/front_page.jpg)
 ![Image](Images/login_page.jpg)
 

@@ -29,8 +29,8 @@ def load_user(user_id):
 class Student(db.Model, UserMixin):
     id = db.Column(db.Integer(), primary_key=True)
     name = db.Column(db.String(length=50), nullable=False)
-    stream = db.Column(db.String(length=50), nullable=False)
-    d_o_b = db.Column(db.String(length=50), nullable=False)
+    stream = db.Column(db.String(length=50))
+    d_o_b = db.Column(db.String(length=50))
     email_address = db.Column(db.String(length=50), nullable=False, unique=True)
     username = db.Column(db.String(length=30), nullable=False, unique=True)
     password_hash = db.Column(db.String(length=60), nullable=False)
@@ -54,8 +54,6 @@ class Student(db.Model, UserMixin):
 
     def is_anonymous(self):
         return False
-
-
 
 
 class Course(db.Model):
@@ -104,13 +102,13 @@ class Attendance(db.Model):
 
 class Timetable(db.Model):
     roll = db.Column(db.Integer(), nullable=False)
-    course1 = db.Column(db.String(length=50), nullable=False)
+    course1 = db.Column(db.String(length=50), nullable=False,primary_key=True)
     course2 = db.Column(db.String(length=50), nullable=False)
     course3 = db.Column(db.String(length=50), nullable=False)
     course4 = db.Column(db.String(length=50), nullable=False)
     course5 = db.Column(db.String(length=50), nullable=False)
     course6 = db.Column(db.String(length=50), nullable=False)
-    days = db.Column(db.String(length=50), nullable=False,primary_key=True)
+    days = db.Column(db.String(length=50), nullable=False)
 
 # Routes
 

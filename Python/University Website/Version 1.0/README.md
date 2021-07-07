@@ -44,16 +44,15 @@
 ## Output
 ![Image](Images/details.jpg)
 ![Image](Images/fees.jpg)
-![Image](Images/tt.jpg)
+![Image](Images/time_table.jpg)
 ![Image](Images/course.jpg)
-![Image](Images/attend.jpg)
+![Image](Images/attendance.jpg)
 
 <hr>
 
 <h2>Input</h2>
+![Image](Images/front_page.jpg)
+![Image](Images/login_page.jpg)
 
-![Image](Images/login.jpg)
-![Image](Images/home_page.jpg)
-![Image](Images/register.jpg)
 
 
